@@ -6,3 +6,32 @@
     align-items: center;
     justify-content: center;
 }
+.pokemon-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.pagination-button{
+    margin-top:20px;
+}
+.button-prev{
+    margin: 10px;
+    padding: 10px ;
+    font-size: medium;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #8fcee9;
+
+}
+.button-next{
+    margin: 10px;
+    padding: 10px ;
+    font-size: medium;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #44b5e5;
+
+}

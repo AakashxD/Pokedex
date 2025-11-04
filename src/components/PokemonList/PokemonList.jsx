@@ -44,17 +44,23 @@ const PokemonList = () => {
     <div className="pokemon-list-wrapper">
 
       <h1>List of pokemon</h1>
+      <div className="pokemon-cards">
       {isLoading ? (
         <h2>Loading...</h2>
       ) : (
         pokemons.map((pokemon) => (
-          <PokemonCard
+          <PokemonCard 
             key={pokemon.id}
             name={pokemon.name}
             url={pokemon.image}
           />
         ))
       )}
+      </div>
+      <div className="pagination-button">
+        <button className="button-prev">prev</button>
+        <button className="button-next">next</button>
+      </div>
     </div>
   );
 };

@@ -10,7 +10,7 @@ const Pokedex = () => {
     <div>
     <h1>P o k e d e x</h1>
     </div>
-   <Search/>
+     <Search/>
     <PokemonList/>
    </div>
    </>

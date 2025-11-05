@@ -27,7 +27,9 @@
     font-size: medium;
     letter-spacing: 0.3rem;
     text-transform: capitalize;
+    color:rgba(30, 23, 23, 0.44)
 }
+
 .pokemon-card:hover{
     transform: scale(1.01);
     transition: all 0.1s ease-in-out;

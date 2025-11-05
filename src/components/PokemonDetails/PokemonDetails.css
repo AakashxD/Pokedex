@@ -1,0 +1,156 @@
+:root{
+  --bg: #f4f6f9;
+  --card: #ffffff;
+  --ink: #1f2937;
+  --muted: #6b7280;
+  --accent: #2bb3e9;      /* info card blue */
+  --radius: 16px;
+  --shadow: 0 8px 24px rgba(0,0,0,.08);
+}
+
+/* page */
+.poke-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(0,0,0,0.04) 0 8px, transparent 9px) 0 0/28px 28px,
+    linear-gradient(180deg,#eef2f7, #f8fafc 40%, #eef2f7);
+  color: var(--ink);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  padding: 48px 16px;
+}
+
+/* header */
+.poke-header {
+  max-width: 1100px;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+.poke-name {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: .5px;
+}
+.poke-id {
+  font-weight: 700;
+  color: #94a3b8;
+}
+
+/* main grid */
+.poke-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 28px;
+}
+@media (max-width: 920px){
+  .poke-grid { grid-template-columns: 1fr; }
+}
+
+/* image card */
+.poke-art {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+  display: grid;
+  place-items: center;
+  min-height: 420px;
+}
+.poke-art img{
+  width: min(90%, 520px);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 16px rgba(0,0,0,.15));
+}
+
+/* info column */
+.poke-info {
+  display: grid;
+  gap: 18px;
+}
+
+/* description text */
+.poke-desc {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+/* blue spec card */
+.spec-card {
+  background: var(--accent);
+  color: #041b2a;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+.spec-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 18px;
+}
+.spec-label {
+  font-size: 12px;
+  letter-spacing: .6px;
+  text-transform: uppercase;
+  opacity: .85;
+}
+.spec-value {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* type badges */
+.type-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  font-weight: 700;
+  color: #0b0b0b;
+  border-radius: 10px;
+  background: #e5e7eb;
+  box-shadow: inset 0 -2px rgba(0,0,0,.06);
+  text-transform: capitalize;
+}
+
+/* per-type colors */
+.badge.grass  { background:#a7db8d; }
+.badge.poison { background:#c183c1; }
+.badge.fire   { background:#f5ac78; }
+.badge.water  { background:#9db7f5; }
+.badge.bug    { background:#c6d16e; }
+.badge.normal { background:#c6c6a7; }
+.badge.electric{ background:#fae078; }
+.badge.ground { background:#e0c068; }
+.badge.fairy  { background:#f4bdc9; }
+.badge.fighting{ background:#d67873; }
+.badge.psychic{ background:#fa92b2; }
+.badge.rock   { background:#d1c17d; }
+.badge.ghost  { background:#a292bc; }
+.badge.ice    { background:#bce6e6; }
+.badge.dragon { background:#a27dfa; }
+.badge.dark   { background:#a29288; }
+.badge.steel  { background:#d1d1e0; }
+.badge.flying { background:#c6b7f5; }
+
+/* loading */
+.loading {
+  max-width: 1100px;
+  margin: 80px auto;
+  text-align: center;
+  color: var(--muted);
+  font-size: 18px;
+}

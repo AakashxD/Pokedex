@@ -1,12 +1,10 @@
 import Pokedex from "./components/Pokedex/Pokedex"
 import PokemonList from "./components/PokemonList/PokemonList";
-
+import CustomRoutes from "./routes/CustomRoutes";
 function App() {
   return (
-    <><div>
-      <Pokedex />
-   
-    </div>
+    <>
+    <CustomRoutes/>
     
     </>
   )
